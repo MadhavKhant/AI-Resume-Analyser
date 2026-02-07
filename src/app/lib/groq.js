@@ -6,6 +6,7 @@ export async function getGroqChatCompletion(resumeText, role, experience) {
   const prompt = `
 You are a strict ATS resume analyzer.
 
+strict output rule follow:
 Return ONLY VALID JSON.
 No explanation.
 No markdown.
