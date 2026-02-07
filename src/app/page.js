@@ -115,12 +115,14 @@ export default function ResumeAnalyzerPage() {
   // ⭐ UI
   // ==============================
   return (
-    <div className="min-h-screen bg-linear-to-br from-indigo-50 to-blue-100 p-10 space-y-10">
-      <h1 className="text-4xl font-bold text-center">
+    <div className="min-h-screen bg-linear-to-br from-indigo-50 to-blue-100 p-4 sm:p-6 md:p-8 lg:p-10 space-y-8 sm:space-y-10">
+
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center">
+
         🧠 AI Resume Analyzer 🚀
       </h1>
 
-      <div className="max-w-xl mx-auto">
+      <div className="w-full max-w-md sm:max-w-xl mx-auto">
         <UploadCard
           file={file} 
           clearFile={clearFile}
@@ -136,7 +138,7 @@ export default function ResumeAnalyzerPage() {
         />
       </div>
 
-      <div className="max-w-3xl mx-auto">
+      <div className="w-full max-w-md sm:max-w-2xl lg:max-w-3xl mx-auto">
         <Analysis result={result} />
       </div>
     </div>

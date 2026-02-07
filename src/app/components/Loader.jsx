@@ -6,7 +6,7 @@
 export default function Loader({ progress }) {
 
   return (
-    <div className="w-full space-y-2">
+    <div className="text-center text-xs sm:text-sm text-gray-600">
 
       {/* progress bar */}
       <div className="h-3 bg-gray-200 rounded-full overflow-hidden">

@@ -41,7 +41,7 @@ ${resumeText}
         content: prompt,
       },
     ],
-    max_completion_tokens: 300,
+    max_completion_tokens: 1000,
     temperature: 0.3, // more deterministic
     model: "llama-3.1-8b-instant",
   });

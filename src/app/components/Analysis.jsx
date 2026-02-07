@@ -9,12 +9,12 @@ export default function Analysis({ result }) {
   if (!result) return null;
 
   return (
-    <div className="bg-white shadow-2xl rounded-2xl p-8 space-y-8 border">
+    <div className="bg-white shadow-2xl rounded-2xl p-4 sm:p-6 md:p-8 space-y-6 sm:space-y-8 border">
 
       {/* ==============================
           HEADER
       ============================== */}
-      <h2 className="text-3xl font-bold text-center">
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center">
         📊 Resume Analysis Report
       </h2>
 
@@ -24,15 +24,8 @@ export default function Analysis({ result }) {
       ============================== */}
       <div className="flex justify-center">
         <div
-          className="
-            w-36 h-36
-            rounded-full
-            bg-indigo-600
-            text-white
-            flex items-center justify-center
-            text-4xl font-bold
-            shadow-lg
-          "
+          className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-indigo-600 text-white flex 
+          items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold shadow-lg"
         >
           {result.score}% {/* dynamic score */}
         </div>
@@ -42,7 +35,7 @@ export default function Analysis({ result }) {
       {/* ==============================
           SKILLS GRID
       ============================== */}
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
 
         {/* ✅ Matched Skills */}
         <div className="bg-green-50 p-5 rounded-xl border border-green-200">

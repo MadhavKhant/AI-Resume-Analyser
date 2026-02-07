@@ -48,9 +48,11 @@ export default function UploadCard({
   }
 
   return (
-    <div className="bg-white shadow-2xl rounded-2xl p-8 space-y-6 border">
+    <div className="bg-white shadow-2xl rounded-2xl p-4 sm:p-6 md:p-8 space-y-5 sm:space-y-6 border">
+
+
       {/* Header */}
-      <h2 className="text-xl font-semibold flex items-center gap-2">
+      <h2 className="text-lg sm:text-xl font-semibold flex items-center gap-2">
         📄 Upload Resume
       </h2>
 
@@ -89,17 +91,10 @@ export default function UploadCard({
           Upload Area
       ============================== */}
       <div
+        className="cursor-pointer border-2 border-dashed border-indigo-300 rounded-xl p-6 
+        sm:p-8 md:p-10 flex flex-col items-center 
+        justify-center text-center hover:bg-indigo-50 transition"
         onClick={openFilePicker}
-        className="
-          cursor-pointer
-          border-2 border-dashed border-indigo-300
-          rounded-xl
-          p-10
-          flex flex-col items-center justify-center
-          text-center
-          hover:bg-indigo-50
-          transition
-        "
       >
         <UploadCloud size={48} className="text-indigo-600 mb-3" />
 
