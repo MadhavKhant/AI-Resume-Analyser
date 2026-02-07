@@ -2,6 +2,7 @@ import Groq from "groq-sdk";
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
+
 export async function getGroqChatCompletion(resumeText, role, experience) {
   const prompt = `
 You are a strict ATS resume analyzer.
